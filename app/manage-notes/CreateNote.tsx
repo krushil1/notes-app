@@ -22,14 +22,11 @@ export default function CreateNote({ onNoteCreated }: { onNoteCreated: () => voi
         body: JSON.stringify({ title, content }),
       });
 
-      // Form submitted successfully
       console.log("Form submitted");
 
-      // Clear input fields
       setContent("");
       setTitle("");
 
-      // Notify the parent component that a new note has been created
       onNoteCreated();
 
     } catch (error) {

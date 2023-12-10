@@ -22,7 +22,7 @@ function formatDate(dateString: string | number | Date) {
     hour12: true,
   };
   
-  const formattedDate = new Date(dateString).toLocaleString("en-US", options);
+  const formattedDate = new Date(dateString).toLocaleString("en-US");
   
   return formattedDate;
 }

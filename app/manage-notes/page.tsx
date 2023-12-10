@@ -40,7 +40,7 @@ export default function NotesPage() {
 
   const handleDeleteNote = async (id: string) => {
     await deleteNote(id);
-    await getAndSetNotes(); // Refresh the notes after deleting
+    await getAndSetNotes(); 
   };
 
   const getAndSetNotes = async () => {
